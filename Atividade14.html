@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function bhaskara(a, b, c) {
+           raizesEquacaoMais = (-b + (((b**2) - (4*a*c)) ** 0.5)) / (2*a);
+           raizesEquacaoMenos = (-b - (((b**2) - (4*a*c)) ** 0.5)) / (2*a);
+   
+           return [raizesEquacaoMais, raizesEquacaoMenos];
+        }
+   
+        var resultado = bhaskara(1, 2, 1);
+        alert("Raiz da Equação mais: " + resultado[0]);
+        alert("Raiz da Equação menos: " + resultado[1]);
+        
+    </script>
+</body>
+</html>
